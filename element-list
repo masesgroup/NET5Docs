@@ -62,7 +62,6 @@ system.io.enumeration
 system.io.isolatedstorage
 system.io.memorymappedfiles
 system.io.packaging
-system.io.pipelines
 system.io.pipes
 system.linq
 system.linq.expressions
@@ -70,7 +69,6 @@ system.linq.expressions.interpreter
 system.media
 system.net
 system.net.cache
-system.net.connections
 system.net.http
 system.net.http.headers
 system.net.http.json
