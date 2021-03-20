@@ -204,57 +204,57 @@ implements <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/IJCVo
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EventRaised(java.lang.Object...)">EventRaised</a></span>&#8203;(java.lang.Object...&nbsp;argsFromJCOBridge)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DynamicInvoke(org.mases.jcobridge.netreflection.NetObject,system.data.DataRowChangeEventArgs)">DynamicInvoke</a></span>&#8203;(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender,
+<a href="DataRowChangeEventArgs.html" title="class in system.data">DataRowChangeEventArgs</a>&nbsp;e)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i2">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EventRaised(java.lang.Object...)">EventRaised</a></span>&#8203;(java.lang.Object...&nbsp;argsFromJCOBridge)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="altColor" id="i6">
+<tr class="rowColor" id="i7">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="rowColor" id="i7">
+<tr class="altColor" id="i8">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Invoke(org.mases.jcobridge.netreflection.NetObject,system.data.DataRowChangeEventArgs)">Invoke</a></span>&#8203;(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender,
 <a href="DataRowChangeEventArgs.html" title="class in system.data">DataRowChangeEventArgs</a>&nbsp;e)</code></th>
 <td class="colLast">
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
 </td>
-</tr>
-<tr class="altColor" id="i8">
-<td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#METHOD_JAVA_NAME(org.mases.jcobridge.netreflection.NetObject,system.data.DataRowChangeEventArgs)">METHOD_JAVA_NAME</a></span>&#8203;(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender,
-<a href="DataRowChangeEventArgs.html" title="class in system.data">DataRowChangeEventArgs</a>&nbsp;e)</code></th>
-<td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -419,7 +419,7 @@ implements <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/IJCVo
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <code>Object</code> representing the instance of the instantiated Class</dd>
+<dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
 </section>
 </li>
@@ -433,7 +433,7 @@ implements <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/IJCVo
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the Type of the instantiated Class</dd>
+<dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the CLR Type of the instantiated Class</dd>
 </dl>
 </section>
 </li>
@@ -459,10 +459,10 @@ implements <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/IJCVo
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="METHOD_JAVA_NAME(org.mases.jcobridge.netreflection.NetObject,system.data.DataRowChangeEventArgs)">METHOD_JAVA_NAME</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">METHOD_JAVA_NAME</span>&#8203;(<span class="arguments"><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender,
+<h3><a id="DynamicInvoke(org.mases.jcobridge.netreflection.NetObject,system.data.DataRowChangeEventArgs)">DynamicInvoke</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">DynamicInvoke</span>&#8203;(<span class="arguments"><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sender,
 <a href="DataRowChangeEventArgs.html" title="class in system.data">DataRowChangeEventArgs</a>&nbsp;e)</span>
-                      throws <span class="exceptions">java.lang.Throwable</span></div>
+                   throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

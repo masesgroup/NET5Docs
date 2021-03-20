@@ -252,8 +252,8 @@ byte[]&nbsp;data,
 </tr>
 <tr class="rowColor" id="i7">
 <td class="colFirst"><code><a href="FieldBuilder.html" title="class in system.reflection.emit">FieldBuilder</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DefineInitializedData(java.lang.String,org.mases.jcobridge.JCRefOut,system.reflection.FieldAttributes)">DefineInitializedData</a></span>&#8203;(java.lang.String&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DefineInitializedData(java.lang.String,org.mases.jcobridge.netreflection.JCORefOut,system.reflection.FieldAttributes)">DefineInitializedData</a></span>&#8203;(java.lang.String&nbsp;dupParam0,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
 <a href="../FieldAttributes.html" title="class in system.reflection">FieldAttributes</a>&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -443,7 +443,7 @@ int&nbsp;sigLength)</code></th>
 </tr>
 <tr class="altColor" id="i34">
 <td class="colFirst"><code><a href="SignatureToken.html" title="class in system.reflection.emit">SignatureToken</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetSignatureToken(org.mases.jcobridge.JCRefOut,int)">GetSignatureToken</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam0,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetSignatureToken(org.mases.jcobridge.netreflection.JCORefOut,int)">GetSignatureToken</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
 int&nbsp;dupParam1)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -552,8 +552,8 @@ byte[]&nbsp;binaryAttribute)</code></th>
 </tr>
 <tr class="rowColor" id="i53">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetCustomAttribute(system.reflection.ConstructorInfo,org.mases.jcobridge.JCRefOut)">SetCustomAttribute</a></span>&#8203;(<a href="../ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetCustomAttribute(system.reflection.ConstructorInfo,org.mases.jcobridge.netreflection.JCORefOut)">SetCustomAttribute</a></span>&#8203;(<a href="../ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;dupParam0,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i54">
@@ -741,7 +741,7 @@ byte[]&nbsp;binaryAttribute)</code></th>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../Module.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../Module.html" title="class in system.reflection">Module</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <code>Object</code> representing the instance of the instantiated Class</dd>
+<dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
 </section>
 </li>
@@ -767,7 +767,7 @@ byte[]&nbsp;binaryAttribute)</code></th>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../Module.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../Module.html" title="class in system.reflection">Module</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the Type of the instantiated Class</dd>
+<dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the CLR Type of the instantiated Class</dd>
 </dl>
 </section>
 </li>
@@ -1035,9 +1035,9 @@ byte[]&nbsp;data,
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="DefineInitializedData(java.lang.String,org.mases.jcobridge.JCRefOut,system.reflection.FieldAttributes)">DefineInitializedData</a></h3>
+<h3><a id="DefineInitializedData(java.lang.String,org.mases.jcobridge.netreflection.JCORefOut,system.reflection.FieldAttributes)">DefineInitializedData</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="FieldBuilder.html" title="class in system.reflection.emit">FieldBuilder</a></span>&nbsp;<span class="memberName">DefineInitializedData</span>&#8203;(<span class="arguments">java.lang.String&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
 <a href="../FieldAttributes.html" title="class in system.reflection">FieldAttributes</a>&nbsp;dupParam2)</span>
                                    throws <span class="exceptions">java.lang.Throwable,
 <a href="../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
@@ -1383,8 +1383,8 @@ int&nbsp;sigLength)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="GetSignatureToken(org.mases.jcobridge.JCRefOut,int)">GetSignatureToken</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="SignatureToken.html" title="class in system.reflection.emit">SignatureToken</a></span>&nbsp;<span class="memberName">GetSignatureToken</span>&#8203;(<span class="arguments"><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam0,
+<h3><a id="GetSignatureToken(org.mases.jcobridge.netreflection.JCORefOut,int)">GetSignatureToken</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="SignatureToken.html" title="class in system.reflection.emit">SignatureToken</a></span>&nbsp;<span class="memberName">GetSignatureToken</span>&#8203;(<span class="arguments"><a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
 int&nbsp;dupParam1)</span>
                                  throws <span class="exceptions">java.lang.Throwable,
 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -2166,9 +2166,9 @@ byte[]&nbsp;binaryAttribute)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="SetCustomAttribute(system.reflection.ConstructorInfo,org.mases.jcobridge.JCRefOut)">SetCustomAttribute</a></h3>
+<h3><a id="SetCustomAttribute(system.reflection.ConstructorInfo,org.mases.jcobridge.netreflection.JCORefOut)">SetCustomAttribute</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">SetCustomAttribute</span>&#8203;(<span class="arguments"><a href="../ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1)</span>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</span>
                         throws <span class="exceptions">java.lang.Throwable,
 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
 <a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
