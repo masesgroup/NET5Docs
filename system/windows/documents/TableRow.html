@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -93,7 +93,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code>, <code><a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">TableRow</span>
@@ -303,6 +303,16 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a><code>equals, getClass, notify, notifyAll, wait, wait, wait</code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.windows.markup.<a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></h3>
+<a id="methods.inherited.from.class.system.windows.markup.IAddChild">
+<!--   -->
+</a><code><a href="../markup/IAddChild.html#AddChild(org.mases.jcobridge.netreflection.NetObject)">AddChild</a>, <a href="../markup/IAddChild.html#AddText(java.lang.String)">AddText</a></code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.windows.markup.<a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></h3>
+<a id="methods.inherited.from.class.system.windows.markup.IQueryAmbient">
+<!--   -->
+</a><code><a href="../markup/IQueryAmbient.html#IsAmbientPropertyAvailable(java.lang.String)">IsAmbientPropertyAvailable</a></code></div>
 </section>
 </li>
 </ul>
@@ -420,7 +430,11 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <div class="block">Returns the reflected Assembly name</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IAddChild.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IQueryAmbient.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="TextElement.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="TextElement.html" title="class in system.windows.documents">TextElement</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -436,7 +450,11 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <div class="block">Returns the reflected Class name</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IAddChild.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IQueryAmbient.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="TextElement.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="TextElement.html" title="class in system.windows.documents">TextElement</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -452,7 +470,11 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <div class="block">Returns the reflected Class name used to build the object</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IAddChild.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IQueryAmbient.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="TextElement.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="TextElement.html" title="class in system.windows.documents">TextElement</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -469,7 +491,11 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <div class="block">Returns the instantiated class</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IAddChild.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IQueryAmbient.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="TextElement.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="TextElement.html" title="class in system.windows.documents">TextElement</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -495,7 +521,11 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <div class="block">Returns the instantiated class Type</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IAddChild.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IAddChild.html" title="interface in system.windows.markup">IAddChild</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../markup/IQueryAmbient.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../markup/IQueryAmbient.html" title="interface in system.windows.markup">IQueryAmbient</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="TextElement.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="TextElement.html" title="class in system.windows.documents">TextElement</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -564,7 +594,7 @@ extends <a href="TextElement.html" title="class in system.windows.documents">Tex
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

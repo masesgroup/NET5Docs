@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -91,7 +91,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></code>, <code><a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -99,7 +99,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ListBoxItemAutomationPeer</span>
-extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a></pre>
+extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a>
+implements <a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></pre>
 <div class="block">The base .NET class managing System.Windows.Automation.Peers.ListBoxItemAutomationPeer, PresentationFramework, Version=5.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -295,6 +296,16 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a><code>equals, getClass, notify, notifyAll, wait, wait, wait</code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.windows.automation.provider.<a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></h3>
+<a id="methods.inherited.from.class.system.windows.automation.provider.IScrollItemProvider">
+<!--   -->
+</a><code><a href="../provider/IScrollItemProvider.html#ScrollIntoView()">ScrollIntoView</a></code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.windows.automation.provider.<a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></h3>
+<a id="methods.inherited.from.class.system.windows.automation.provider.IVirtualizedItemProvider">
+<!--   -->
+</a><code><a href="../provider/IVirtualizedItemProvider.html#Realize()">Realize</a></code></div>
 </section>
 </li>
 </ul>
@@ -427,6 +438,10 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IScrollItemProvider.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IVirtualizedItemProvider.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="SelectorItemAutomationPeer.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -443,6 +458,10 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IScrollItemProvider.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IVirtualizedItemProvider.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="SelectorItemAutomationPeer.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -459,6 +478,10 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IScrollItemProvider.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IVirtualizedItemProvider.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="SelectorItemAutomationPeer.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -476,6 +499,10 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IScrollItemProvider.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IVirtualizedItemProvider.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="SelectorItemAutomationPeer.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -502,6 +529,10 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IScrollItemProvider.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IScrollItemProvider.html" title="interface in system.windows.automation.provider">IScrollItemProvider</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../provider/IVirtualizedItemProvider.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../provider/IVirtualizedItemProvider.html" title="interface in system.windows.automation.provider">IVirtualizedItemProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="SelectorItemAutomationPeer.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="SelectorItemAutomationPeer.html" title="class in system.windows.automation.peers">SelectorItemAutomationPeer</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -569,7 +600,7 @@ extends <a href="SelectorItemAutomationPeer.html" title="class in system.windows
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

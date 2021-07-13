@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -83,7 +83,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></code></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -91,7 +91,8 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">CodeGenerator</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
+extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
+implements <a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></pre>
 <div class="block">The base .NET class managing System.CodeDom.Compiler.CodeGenerator, System.CodeDom, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51.
  <p>
  
@@ -279,6 +280,11 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a><code>equals, getClass, notify, notifyAll, wait, wait, wait</code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.codedom.compiler.<a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></h3>
+<a id="methods.inherited.from.class.system.codedom.compiler.ICodeGenerator">
+<!--   -->
+</a><code><a href="ICodeGenerator.html#CreateEscapedIdentifier(java.lang.String)">CreateEscapedIdentifier</a>, <a href="ICodeGenerator.html#CreateValidIdentifier(java.lang.String)">CreateValidIdentifier</a>, <a href="ICodeGenerator.html#GenerateCodeFromCompileUnit(system.codedom.CodeCompileUnit,system.io.TextWriter,system.codedom.compiler.CodeGeneratorOptions)">GenerateCodeFromCompileUnit</a>, <a href="ICodeGenerator.html#GenerateCodeFromExpression(system.codedom.CodeExpression,system.io.TextWriter,system.codedom.compiler.CodeGeneratorOptions)">GenerateCodeFromExpression</a>, <a href="ICodeGenerator.html#GenerateCodeFromNamespace(system.codedom.CodeNamespace,system.io.TextWriter,system.codedom.compiler.CodeGeneratorOptions)">GenerateCodeFromNamespace</a>, <a href="ICodeGenerator.html#GenerateCodeFromStatement(system.codedom.CodeStatement,system.io.TextWriter,system.codedom.compiler.CodeGeneratorOptions)">GenerateCodeFromStatement</a>, <a href="ICodeGenerator.html#GenerateCodeFromType(system.codedom.CodeTypeDeclaration,system.io.TextWriter,system.codedom.compiler.CodeGeneratorOptions)">GenerateCodeFromType</a>, <a href="ICodeGenerator.html#GetTypeOutput(system.codedom.CodeTypeReference)">GetTypeOutput</a>, <a href="ICodeGenerator.html#IsValidIdentifier(java.lang.String)">IsValidIdentifier</a>, <a href="ICodeGenerator.html#Supports(system.codedom.compiler.GeneratorSupport)">Supports</a>, <a href="ICodeGenerator.html#ValidateIdentifier(java.lang.String)">ValidateIdentifier</a></code></div>
 </section>
 </li>
 </ul>
@@ -382,6 +388,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Returns the reflected Assembly name</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ICodeGenerator.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
@@ -397,6 +405,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">IJCOBridgeReflected</a></code></span></div>
 <div class="block">Returns the reflected Class name</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ICodeGenerator.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -414,6 +424,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Returns the reflected Class name used to build the object</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ICodeGenerator.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
@@ -430,6 +442,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">IJCOBridgeReflected</a></code></span></div>
 <div class="block">Returns the instantiated class</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ICodeGenerator.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -456,6 +470,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">IJCOBridgeReflected</a></code></span></div>
 <div class="block">Returns the instantiated class Type</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="ICodeGenerator.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -585,7 +601,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -83,12 +83,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Cursor</span>
 extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
-implements java.lang.AutoCloseable</pre>
+implements <a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a>, java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.Windows.Forms.Cursor, System.Windows.Forms, Version=5.0.7.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -354,6 +354,11 @@ java.lang.String&nbsp;resource)</code></th>
 <a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a><code>equals, getClass, notify, notifyAll, wait, wait, wait</code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></h3>
+<a id="methods.inherited.from.class.system.runtime.serialization.ISerializable">
+<!--   -->
+</a><code><a href="../../runtime/serialization/ISerializable.html#GetObjectData(system.runtime.serialization.SerializationInfo,system.runtime.serialization.StreamingContext)">GetObjectData</a></code></div>
 </section>
 </li>
 </ul>
@@ -564,6 +569,8 @@ java.lang.String&nbsp;resource)</span>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../runtime/serialization/ISerializable.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -580,6 +587,8 @@ java.lang.String&nbsp;resource)</span>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../runtime/serialization/ISerializable.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -596,6 +605,8 @@ java.lang.String&nbsp;resource)</span>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../runtime/serialization/ISerializable.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -613,6 +624,8 @@ java.lang.String&nbsp;resource)</span>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../runtime/serialization/ISerializable.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -639,6 +652,8 @@ java.lang.String&nbsp;resource)</span>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../runtime/serialization/ISerializable.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -947,7 +962,7 @@ java.lang.String&nbsp;resource)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

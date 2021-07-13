@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -87,11 +87,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></code>, <code><a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">BindingSource</span>
-extends <a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a></pre>
+extends <a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a>
+implements <a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a>, <a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></pre>
 <div class="block">The base .NET class managing System.Windows.Forms.BindingSource, System.Windows.Forms, Version=5.0.7.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -701,6 +702,16 @@ int&nbsp;index)</code></th>
 <a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a><code>equals, getClass, notify, notifyAll, wait, wait, wait</code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.componentmodel.<a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></h3>
+<a id="methods.inherited.from.class.system.componentmodel.ICancelAddNew">
+<!--   -->
+</a><code><a href="../../componentmodel/ICancelAddNew.html#CancelNew(int)">CancelNew</a>, <a href="../../componentmodel/ICancelAddNew.html#EndNew(int)">EndNew</a></code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.componentmodel.<a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></h3>
+<a id="methods.inherited.from.class.system.componentmodel.ISupportInitialize">
+<!--   -->
+</a><code><a href="../../componentmodel/ISupportInitialize.html#BeginInit()">BeginInit</a>, <a href="../../componentmodel/ISupportInitialize.html#EndInit()">EndInit</a></code></div>
 </section>
 </li>
 </ul>
@@ -891,7 +902,11 @@ java.lang.String&nbsp;dataMember)</span>
 <div class="block">Returns the reflected Assembly name</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ICancelAddNew.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ISupportInitialize.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../componentmodel/Component.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -907,7 +922,11 @@ java.lang.String&nbsp;dataMember)</span>
 <div class="block">Returns the reflected Class name</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ICancelAddNew.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ISupportInitialize.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../componentmodel/Component.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -923,7 +942,11 @@ java.lang.String&nbsp;dataMember)</span>
 <div class="block">Returns the reflected Class name used to build the object</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ICancelAddNew.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ISupportInitialize.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../componentmodel/Component.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -940,7 +963,11 @@ java.lang.String&nbsp;dataMember)</span>
 <div class="block">Returns the instantiated class</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ICancelAddNew.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ISupportInitialize.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../componentmodel/Component.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -966,7 +993,11 @@ java.lang.String&nbsp;dataMember)</span>
 <div class="block">Returns the instantiated class Type</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ICancelAddNew.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ICancelAddNew.html" title="interface in system.componentmodel">ICancelAddNew</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../componentmodel/ISupportInitialize.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../componentmodel/ISupportInitialize.html" title="interface in system.componentmodel">ISupportInitialize</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../componentmodel/Component.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../componentmodel/Component.html" title="class in system.componentmodel">Component</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2909,7 +2940,7 @@ int&nbsp;index)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

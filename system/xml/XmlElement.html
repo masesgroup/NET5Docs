@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -77,6 +77,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
+<div class="inheritance"><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectEnumerable</a>
 <div class="inheritance"><a href="XmlNode.html" title="class in system.xml">system.xml.XmlNode</a>
 <div class="inheritance"><a href="XmlLinkedNode.html" title="class in system.xml">system.xml.XmlLinkedNode</a>
 <div class="inheritance">system.xml.XmlElement</div>
@@ -84,10 +85,11 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </div>
 </div>
 </div>
+</div>
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.Iterable&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;</code>, <code><a href="../../org/mases/jcobridge/netreflection/IEnumerable.html" title="interface in org.mases.jcobridge.netreflection">IEnumerable</a></code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">XmlElement</span>
@@ -148,10 +150,10 @@ extends <a href="XmlLinkedNode.html" title="class in system.xml">XmlLinkedNode</
 </table>
 </div>
 <div class="inheritedList">
-<h3>Fields inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
-<a id="fields.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
+<h3>Fields inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></h3>
+<a id="fields.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
 <!--   -->
-</a><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#Null">Null</a></code></div>
+</a><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#Null">Null</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -393,6 +395,11 @@ java.lang.String&nbsp;namespaceURI)</code></th>
 <!--   -->
 </a><code><a href="XmlNode.html#AppendChild(system.xml.XmlNode)">AppendChild</a>, <a href="XmlNode.html#Clone()">Clone</a>, <a href="XmlNode.html#CreateNavigator()">CreateNavigator</a>, <a href="XmlNode.html#getAttributes()">getAttributes</a>, <a href="XmlNode.html#getBaseURI()">getBaseURI</a>, <a href="XmlNode.html#getChildNodes()">getChildNodes</a>, <a href="XmlNode.html#getFirstChild()">getFirstChild</a>, <a href="XmlNode.html#getHasChildNodes()">getHasChildNodes</a>, <a href="XmlNode.html#getInnerText()">getInnerText</a>, <a href="XmlNode.html#getInnerXml()">getInnerXml</a>, <a href="XmlNode.html#getIsReadOnly()">getIsReadOnly</a>, <a href="XmlNode.html#getLastChild()">getLastChild</a>, <a href="XmlNode.html#getLocalName()">getLocalName</a>, <a href="XmlNode.html#getName()">getName</a>, <a href="XmlNode.html#GetNamespaceOfPrefix(java.lang.String)">GetNamespaceOfPrefix</a>, <a href="XmlNode.html#getNamespaceURI()">getNamespaceURI</a>, <a href="XmlNode.html#getNextSibling()">getNextSibling</a>, <a href="XmlNode.html#getNodeType()">getNodeType</a>, <a href="XmlNode.html#getOuterXml()">getOuterXml</a>, <a href="XmlNode.html#getOwnerDocument()">getOwnerDocument</a>, <a href="XmlNode.html#getParentNode()">getParentNode</a>, <a href="XmlNode.html#getPrefix()">getPrefix</a>, <a href="XmlNode.html#GetPrefixOfNamespace(java.lang.String)">GetPrefixOfNamespace</a>, <a href="XmlNode.html#getPreviousSibling()">getPreviousSibling</a>, <a href="XmlNode.html#getPreviousText()">getPreviousText</a>, <a href="XmlNode.html#getSchemaInfo()">getSchemaInfo</a>, <a href="XmlNode.html#getValue()">getValue</a>, <a href="XmlNode.html#InsertAfter(system.xml.XmlNode,system.xml.XmlNode)">InsertAfter</a>, <a href="XmlNode.html#InsertBefore(system.xml.XmlNode,system.xml.XmlNode)">InsertBefore</a>, <a href="XmlNode.html#Normalize()">Normalize</a>, <a href="XmlNode.html#PrependChild(system.xml.XmlNode)">PrependChild</a>, <a href="XmlNode.html#RemoveChild(system.xml.XmlNode)">RemoveChild</a>, <a href="XmlNode.html#ReplaceChild(system.xml.XmlNode,system.xml.XmlNode)">ReplaceChild</a>, <a href="XmlNode.html#SelectNodes(java.lang.String)">SelectNodes</a>, <a href="XmlNode.html#SelectNodes(java.lang.String,system.xml.XmlNamespaceManager)">SelectNodes</a>, <a href="XmlNode.html#SelectSingleNode(java.lang.String)">SelectSingleNode</a>, <a href="XmlNode.html#SelectSingleNode(java.lang.String,system.xml.XmlNamespaceManager)">SelectSingleNode</a>, <a href="XmlNode.html#setInnerText(java.lang.String)">setInnerText</a>, <a href="XmlNode.html#setInnerXml(java.lang.String)">setInnerXml</a>, <a href="XmlNode.html#setPrefix(java.lang.String)">setPrefix</a>, <a href="XmlNode.html#setValue(java.lang.String)">setValue</a>, <a href="XmlNode.html#Supports(java.lang.String,java.lang.String)">Supports</a></code></div>
 <div class="inheritedList">
+<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></h3>
+<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
+<!--   -->
+</a><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#GetEnumerator()">GetEnumerator</a>, <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#iterator()">iterator</a></code></div>
+<div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
 <!--   -->
@@ -402,6 +409,11 @@ java.lang.String&nbsp;namespaceURI)</code></th>
 <a id="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a><code>equals, getClass, notify, notifyAll, wait, wait, wait</code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
+<a id="methods.inherited.from.class.java.lang.Iterable">
+<!--   -->
+</a><code>forEach, spliterator</code></div>
 </section>
 </li>
 </ul>
@@ -1210,7 +1222,7 @@ java.lang.String&nbsp;value)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-e05083bf194fa53691b4f35d0229bcbdc73ed835 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
