@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+<script type="text/javascript">var data = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -259,6 +259,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTokenInfo(system.security.cryptography.pkcs.Rfc3161TimestampTokenInfo)">setTokenInfo</a></span>&#8203;(<a href="Rfc3161TimestampTokenInfo.html" title="class in system.security.cryptography.pkcs">Rfc3161TimestampTokenInfo</a>&nbsp;TokenInfo)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
+<tr class="altColor" id="i10">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#VerifySignatureForSignerInfo(system.security.cryptography.pkcs.SignerInfo,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.x509certificates.X509Certificate2Collection)">VerifySignatureForSignerInfo</a></span>&#8203;(<a href="SignerInfo.html" title="class in system.security.cryptography.pkcs">SignerInfo</a>&nbsp;signerInfo,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../x509certificates/X509Certificate2.html" title="class in system.security.cryptography.x509certificates">X509Certificate2</a>&gt;&nbsp;signerCertificate,
+<a href="../x509certificates/X509Certificate2Collection.html" title="class in system.security.cryptography.x509certificates">X509Certificate2Collection</a>&nbsp;extraCandidates)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -477,6 +484,43 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="VerifySignatureForSignerInfo(system.security.cryptography.pkcs.SignerInfo,org.mases.jcobridge.netreflection.JCORefOut,system.security.cryptography.x509certificates.X509Certificate2Collection)">VerifySignatureForSignerInfo</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">VerifySignatureForSignerInfo</span>&#8203;(<span class="arguments"><a href="SignerInfo.html" title="class in system.security.cryptography.pkcs">SignerInfo</a>&nbsp;signerInfo,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../x509certificates/X509Certificate2.html" title="class in system.security.cryptography.x509certificates">X509Certificate2</a>&gt;&nbsp;signerCertificate,
+<a href="../x509certificates/X509Certificate2Collection.html" title="class in system.security.cryptography.x509certificates">X509Certificate2Collection</a>&nbsp;extraCandidates)</span>
+                                     throws <span class="exceptions">java.lang.Throwable,
+<a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+<a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+<a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../../RankException.html" title="class in system">RankException</a>,
+<a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a>,
+<a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+<a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../../ArrayTypeMismatchException.html" title="class in system">ArrayTypeMismatchException</a></code></dd>
+<dd><code><a href="../CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../formats/asn1/AsnContentException.html" title="class in system.formats.asn1">AsnContentException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="AsSignedCms()">AsSignedCms</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="SignedCms.html" title="class in system.security.cryptography.pkcs">SignedCms</a></span>&nbsp;<span class="memberName">AsSignedCms</span>()
                       throws <span class="exceptions">java.lang.Throwable</span></div>
@@ -531,7 +575,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

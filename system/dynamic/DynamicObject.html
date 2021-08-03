@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -255,26 +255,79 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr class="altColor" id="i8">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryDeleteIndex(system.dynamic.DeleteIndexBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D)">TryDeleteIndex</a></span>&#8203;(<a href="DeleteIndexBinder.html" title="class in system.dynamic">DeleteIndexBinder</a>&nbsp;binder,
-<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;indexes)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryBinaryOperation(system.dynamic.BinaryOperationBinder,org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut)">TryBinaryOperation</a></span>&#8203;(<a href="BinaryOperationBinder.html" title="class in system.dynamic">BinaryOperationBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;arg,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i9">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryDeleteMember(system.dynamic.DeleteMemberBinder)">TryDeleteMember</a></span>&#8203;(<a href="DeleteMemberBinder.html" title="class in system.dynamic">DeleteMemberBinder</a>&nbsp;binder)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryConvert(system.dynamic.ConvertBinder,org.mases.jcobridge.netreflection.JCORefOut)">TryConvert</a></span>&#8203;(<a href="ConvertBinder.html" title="class in system.dynamic">ConvertBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i10">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryCreateInstance(system.dynamic.CreateInstanceBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D,org.mases.jcobridge.netreflection.JCORefOut)">TryCreateInstance</a></span>&#8203;(<a href="CreateInstanceBinder.html" title="class in system.dynamic">CreateInstanceBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i11">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryDeleteIndex(system.dynamic.DeleteIndexBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D)">TryDeleteIndex</a></span>&#8203;(<a href="DeleteIndexBinder.html" title="class in system.dynamic">DeleteIndexBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;indexes)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i12">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryDeleteMember(system.dynamic.DeleteMemberBinder)">TryDeleteMember</a></span>&#8203;(<a href="DeleteMemberBinder.html" title="class in system.dynamic">DeleteMemberBinder</a>&nbsp;binder)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i13">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryGetIndex(system.dynamic.GetIndexBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D,org.mases.jcobridge.netreflection.JCORefOut)">TryGetIndex</a></span>&#8203;(<a href="GetIndexBinder.html" title="class in system.dynamic">GetIndexBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;indexes,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i14">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryGetMember(system.dynamic.GetMemberBinder,org.mases.jcobridge.netreflection.JCORefOut)">TryGetMember</a></span>&#8203;(<a href="GetMemberBinder.html" title="class in system.dynamic">GetMemberBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i15">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryInvoke(system.dynamic.InvokeBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D,org.mases.jcobridge.netreflection.JCORefOut)">TryInvoke</a></span>&#8203;(<a href="InvokeBinder.html" title="class in system.dynamic">InvokeBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i16">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryInvokeMember(system.dynamic.InvokeMemberBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D,org.mases.jcobridge.netreflection.JCORefOut)">TryInvokeMember</a></span>&#8203;(<a href="InvokeMemberBinder.html" title="class in system.dynamic">InvokeMemberBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TrySetIndex(system.dynamic.SetIndexBinder,org.mases.jcobridge.netreflection.NetObject%5B%5D,org.mases.jcobridge.netreflection.NetObject)">TrySetIndex</a></span>&#8203;(<a href="SetIndexBinder.html" title="class in system.dynamic">SetIndexBinder</a>&nbsp;binder,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;indexes,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i11">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TrySetMember(system.dynamic.SetMemberBinder,org.mases.jcobridge.netreflection.NetObject)">TrySetMember</a></span>&#8203;(<a href="SetMemberBinder.html" title="class in system.dynamic">SetMemberBinder</a>&nbsp;binder,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i19">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryUnaryOperation(system.dynamic.UnaryOperationBinder,org.mases.jcobridge.netreflection.JCORefOut)">TryUnaryOperation</a></span>&#8203;(<a href="UnaryOperationBinder.html" title="class in system.dynamic">UnaryOperationBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -495,6 +548,44 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="TryBinaryOperation(system.dynamic.BinaryOperationBinder,org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut)">TryBinaryOperation</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryBinaryOperation</span>&#8203;(<span class="arguments"><a href="BinaryOperationBinder.html" title="class in system.dynamic">BinaryOperationBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;arg,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                           throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryConvert(system.dynamic.ConvertBinder,org.mases.jcobridge.netreflection.JCORefOut)">TryConvert</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryConvert</span>&#8203;(<span class="arguments"><a href="ConvertBinder.html" title="class in system.dynamic">ConvertBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                   throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryCreateInstance(system.dynamic.CreateInstanceBinder,org.mases.jcobridge.netreflection.NetObject[],org.mases.jcobridge.netreflection.JCORefOut)">TryCreateInstance</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryCreateInstance</span>&#8203;(<span class="arguments"><a href="CreateInstanceBinder.html" title="class in system.dynamic">CreateInstanceBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                          throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="TryDeleteIndex(system.dynamic.DeleteIndexBinder,org.mases.jcobridge.netreflection.NetObject[])">TryDeleteIndex</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryDeleteIndex</span>&#8203;(<span class="arguments"><a href="DeleteIndexBinder.html" title="class in system.dynamic">DeleteIndexBinder</a>&nbsp;binder,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;indexes)</span>
@@ -509,6 +600,57 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <section class="detail">
 <h3><a id="TryDeleteMember(system.dynamic.DeleteMemberBinder)">TryDeleteMember</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryDeleteMember</span>&#8203;(<span class="arguments"><a href="DeleteMemberBinder.html" title="class in system.dynamic">DeleteMemberBinder</a>&nbsp;binder)</span>
+                        throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryGetIndex(system.dynamic.GetIndexBinder,org.mases.jcobridge.netreflection.NetObject[],org.mases.jcobridge.netreflection.JCORefOut)">TryGetIndex</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryGetIndex</span>&#8203;(<span class="arguments"><a href="GetIndexBinder.html" title="class in system.dynamic">GetIndexBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;indexes,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                    throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryGetMember(system.dynamic.GetMemberBinder,org.mases.jcobridge.netreflection.JCORefOut)">TryGetMember</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryGetMember</span>&#8203;(<span class="arguments"><a href="GetMemberBinder.html" title="class in system.dynamic">GetMemberBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                     throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryInvoke(system.dynamic.InvokeBinder,org.mases.jcobridge.netreflection.NetObject[],org.mases.jcobridge.netreflection.JCORefOut)">TryInvoke</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryInvoke</span>&#8203;(<span class="arguments"><a href="InvokeBinder.html" title="class in system.dynamic">InvokeBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                  throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryInvokeMember(system.dynamic.InvokeMemberBinder,org.mases.jcobridge.netreflection.NetObject[],org.mases.jcobridge.netreflection.JCORefOut)">TryInvokeMember</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryInvokeMember</span>&#8203;(<span class="arguments"><a href="InvokeMemberBinder.html" title="class in system.dynamic">InvokeMemberBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
                         throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -535,6 +677,18 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TrySetMember</span>&#8203;(<span class="arguments"><a href="SetMemberBinder.html" title="class in system.dynamic">SetMemberBinder</a>&nbsp;binder,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</span>
                      throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryUnaryOperation(system.dynamic.UnaryOperationBinder,org.mases.jcobridge.netreflection.JCORefOut)">TryUnaryOperation</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryUnaryOperation</span>&#8203;(<span class="arguments"><a href="UnaryOperationBinder.html" title="class in system.dynamic">UnaryOperationBinder</a>&nbsp;binder,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;result)</span>
+                          throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -577,7 +731,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

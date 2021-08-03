@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":1};
+<script type="text/javascript">var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -156,69 +156,166 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 </thead>
 <tbody>
 <tr class="altColor" id="i0">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BindToObject(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,system.Guid,org.mases.jcobridge.netreflection.JCORefOut)">BindToObject</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../Guid.html" title="class in system">Guid</a>&nbsp;riidResult,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;ppvResult)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i1">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BindToStorage(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,system.Guid,org.mases.jcobridge.netreflection.JCORefOut)">BindToStorage</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../Guid.html" title="class in system">Guid</a>&nbsp;riid,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;ppvObj)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i2">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CommonPrefixWith(system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">CommonPrefixWith</a></span>&#8203;(<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkOther,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkPrefix)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i3">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ComposeWith(system.runtime.interopservices.comtypes.IMoniker,boolean,org.mases.jcobridge.netreflection.JCORefOut)">ComposeWith</a></span>&#8203;(<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkRight,
+boolean&nbsp;fOnlyIfNotGeneric,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkComposite)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i4">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Enum(boolean,org.mases.jcobridge.netreflection.JCORefOut)">Enum</a></span>&#8203;(boolean&nbsp;fForward,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IEnumMoniker.html" title="interface in system.runtime.interopservices.comtypes">IEnumMoniker</a>&gt;&nbsp;ppenumMoniker)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i5">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetClassID(org.mases.jcobridge.netreflection.JCORefOut)">GetClassID</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../Guid.html" title="class in system">Guid</a>&gt;&nbsp;pClassID)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i6">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetDisplayName(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">GetDisplayName</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;ppszDisplayName)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i7">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i1">
+<tr class="altColor" id="i8">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="altColor" id="i2">
+<tr class="rowColor" id="i9">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i12">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetSizeMax(org.mases.jcobridge.netreflection.JCORefOut)">GetSizeMax</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pcbSize)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i13">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetTimeOfLastChange(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">GetTimeOfLastChange</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="FILETIME.html" title="class in system.runtime.interopservices.comtypes">FILETIME</a>&gt;&nbsp;pFileTime)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i14">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Hash(org.mases.jcobridge.netreflection.JCORefOut)">Hash</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pdwHash)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i15">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Inverse(org.mases.jcobridge.netreflection.JCORefOut)">Inverse</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmk)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsDirty()">IsDirty</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i6">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsEqual(system.runtime.interopservices.comtypes.IMoniker)">IsEqual</a></span>&#8203;(<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkOtherMoniker)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i7">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsRunning(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,system.runtime.interopservices.comtypes.IMoniker)">IsRunning</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
 <a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
 <a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkNewlyRunning)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i8">
+<tr class="rowColor" id="i19">
+<td class="colFirst"><code>int</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsSystemMoniker(org.mases.jcobridge.netreflection.JCORefOut)">IsSystemMoniker</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pdwMksys)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Load(system.runtime.interopservices.comtypes.IStream)">Load</a></span>&#8203;(<a href="IStream.html" title="interface in system.runtime.interopservices.comtypes">IStream</a>&nbsp;pStm)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="rowColor" id="i21">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ParseDisplayName(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,java.lang.String,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">ParseDisplayName</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+java.lang.String&nbsp;pszDisplayName,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pchEaten,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkOut)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i22">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reduce(system.runtime.interopservices.comtypes.IBindCtx,int,system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">Reduce</a></span>&#8203;(<a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+int&nbsp;dwReduceHowFar,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;ppmkToLeft,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkReduced)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i23">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RelativePathTo(system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">RelativePathTo</a></span>&#8203;(<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkOther,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkRelPath)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Save(system.runtime.interopservices.comtypes.IStream,boolean)">Save</a></span>&#8203;(<a href="IStream.html" title="interface in system.runtime.interopservices.comtypes">IStream</a>&nbsp;pStm,
 boolean&nbsp;fClearDirty)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i10">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code>static <a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToIMoniker(org.mases.jcobridge.netreflection.IJCOBridgeReflected)">ToIMoniker</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code></th>
 <td class="colLast">
@@ -404,9 +501,196 @@ boolean&nbsp;fClearDirty)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="IsSystemMoniker(org.mases.jcobridge.netreflection.JCORefOut)">IsSystemMoniker</a></h3>
+<div class="memberSignature"><span class="returnType">int</span>&nbsp;<span class="memberName">IsSystemMoniker</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pdwMksys)</span>
+             throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="BindToObject(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,system.Guid,org.mases.jcobridge.netreflection.JCORefOut)">BindToObject</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">BindToObject</span>&#8203;(<span class="arguments"><a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../Guid.html" title="class in system">Guid</a>&nbsp;riidResult,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;ppvResult)</span>
+           throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="BindToStorage(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,system.Guid,org.mases.jcobridge.netreflection.JCORefOut)">BindToStorage</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">BindToStorage</span>&#8203;(<span class="arguments"><a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../Guid.html" title="class in system">Guid</a>&nbsp;riid,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;ppvObj)</span>
+            throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="CommonPrefixWith(system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">CommonPrefixWith</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">CommonPrefixWith</span>&#8203;(<span class="arguments"><a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkOther,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkPrefix)</span>
+               throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ComposeWith(system.runtime.interopservices.comtypes.IMoniker,boolean,org.mases.jcobridge.netreflection.JCORefOut)">ComposeWith</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">ComposeWith</span>&#8203;(<span class="arguments"><a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkRight,
+boolean&nbsp;fOnlyIfNotGeneric,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkComposite)</span>
+          throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="Enum(boolean,org.mases.jcobridge.netreflection.JCORefOut)">Enum</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">Enum</span>&#8203;(<span class="arguments">boolean&nbsp;fForward,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IEnumMoniker.html" title="interface in system.runtime.interopservices.comtypes">IEnumMoniker</a>&gt;&nbsp;ppenumMoniker)</span>
+   throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="GetClassID(org.mases.jcobridge.netreflection.JCORefOut)">GetClassID</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetClassID</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../Guid.html" title="class in system">Guid</a>&gt;&nbsp;pClassID)</span>
+         throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="GetDisplayName(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">GetDisplayName</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetDisplayName</span>&#8203;(<span class="arguments"><a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;ppszDisplayName)</span>
+             throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="GetSizeMax(org.mases.jcobridge.netreflection.JCORefOut)">GetSizeMax</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetSizeMax</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pcbSize)</span>
+         throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="GetTimeOfLastChange(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">GetTimeOfLastChange</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetTimeOfLastChange</span>&#8203;(<span class="arguments"><a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="FILETIME.html" title="class in system.runtime.interopservices.comtypes">FILETIME</a>&gt;&nbsp;pFileTime)</span>
+                  throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="Hash(org.mases.jcobridge.netreflection.JCORefOut)">Hash</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">Hash</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pdwHash)</span>
+   throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="Inverse(org.mases.jcobridge.netreflection.JCORefOut)">Inverse</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">Inverse</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmk)</span>
+      throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="Load(system.runtime.interopservices.comtypes.IStream)">Load</a></h3>
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">Load</span>&#8203;(<span class="arguments"><a href="IStream.html" title="interface in system.runtime.interopservices.comtypes">IStream</a>&nbsp;pStm)</span>
    throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ParseDisplayName(system.runtime.interopservices.comtypes.IBindCtx,system.runtime.interopservices.comtypes.IMoniker,java.lang.String,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">ParseDisplayName</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">ParseDisplayName</span>&#8203;(<span class="arguments"><a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkToLeft,
+java.lang.String&nbsp;pszDisplayName,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pchEaten,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkOut)</span>
+               throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="Reduce(system.runtime.interopservices.comtypes.IBindCtx,int,system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">Reduce</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">Reduce</span>&#8203;(<span class="arguments"><a href="IBindCtx.html" title="interface in system.runtime.interopservices.comtypes">IBindCtx</a>&nbsp;pbc,
+int&nbsp;dwReduceHowFar,
+<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;ppmkToLeft,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkReduced)</span>
+     throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="RelativePathTo(system.runtime.interopservices.comtypes.IMoniker,org.mases.jcobridge.netreflection.JCORefOut)">RelativePathTo</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">RelativePathTo</span>&#8203;(<span class="arguments"><a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&nbsp;pmkOther,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="IMoniker.html" title="interface in system.runtime.interopservices.comtypes">IMoniker</a>&gt;&nbsp;ppmkRelPath)</span>
+             throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -448,7 +732,7 @@ boolean&nbsp;fClearDirty)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

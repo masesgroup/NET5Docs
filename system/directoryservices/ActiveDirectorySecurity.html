@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -298,62 +298,76 @@ boolean&nbsp;isInherited,
 </td>
 </tr>
 <tr class="altColor" id="i12">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ModifyAccessRule(system.security.accesscontrol.AccessControlModification,system.security.accesscontrol.AccessRule,org.mases.jcobridge.netreflection.JCORefOut)">ModifyAccessRule</a></span>&#8203;(<a href="../security/accesscontrol/AccessControlModification.html" title="class in system.security.accesscontrol">AccessControlModification</a>&nbsp;modification,
+<a href="../security/accesscontrol/AccessRule.html" title="class in system.security.accesscontrol">AccessRule</a>&nbsp;rule,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;modified)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i13">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ModifyAuditRule(system.security.accesscontrol.AccessControlModification,system.security.accesscontrol.AuditRule,org.mases.jcobridge.netreflection.JCORefOut)">ModifyAuditRule</a></span>&#8203;(<a href="../security/accesscontrol/AccessControlModification.html" title="class in system.security.accesscontrol">AccessControlModification</a>&nbsp;modification,
+<a href="../security/accesscontrol/AuditRule.html" title="class in system.security.accesscontrol">AuditRule</a>&nbsp;rule,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;modified)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PurgeAccessRules(system.security.principal.IdentityReference)">PurgeAccessRules</a></span>&#8203;(<a href="../security/principal/IdentityReference.html" title="class in system.security.principal">IdentityReference</a>&nbsp;identity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#PurgeAuditRules(system.security.principal.IdentityReference)">PurgeAuditRules</a></span>&#8203;(<a href="../security/principal/IdentityReference.html" title="class in system.security.principal">IdentityReference</a>&nbsp;identity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RemoveAccess(system.security.principal.IdentityReference,system.security.accesscontrol.AccessControlType)">RemoveAccess</a></span>&#8203;(<a href="../security/principal/IdentityReference.html" title="class in system.security.principal">IdentityReference</a>&nbsp;identity,
 <a href="../security/accesscontrol/AccessControlType.html" title="class in system.security.accesscontrol">AccessControlType</a>&nbsp;type)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RemoveAccessRule(system.directoryservices.ActiveDirectoryAccessRule)">RemoveAccessRule</a></span>&#8203;(<a href="ActiveDirectoryAccessRule.html" title="class in system.directoryservices">ActiveDirectoryAccessRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RemoveAccessRuleSpecific(system.directoryservices.ActiveDirectoryAccessRule)">RemoveAccessRuleSpecific</a></span>&#8203;(<a href="ActiveDirectoryAccessRule.html" title="class in system.directoryservices">ActiveDirectoryAccessRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RemoveAudit(system.security.principal.IdentityReference)">RemoveAudit</a></span>&#8203;(<a href="../security/principal/IdentityReference.html" title="class in system.security.principal">IdentityReference</a>&nbsp;identity)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RemoveAuditRule(system.directoryservices.ActiveDirectoryAuditRule)">RemoveAuditRule</a></span>&#8203;(<a href="ActiveDirectoryAuditRule.html" title="class in system.directoryservices">ActiveDirectoryAuditRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i19">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RemoveAuditRuleSpecific(system.directoryservices.ActiveDirectoryAuditRule)">RemoveAuditRuleSpecific</a></span>&#8203;(<a href="ActiveDirectoryAuditRule.html" title="class in system.directoryservices">ActiveDirectoryAuditRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i20">
+<tr class="altColor" id="i22">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ResetAccessRule(system.directoryservices.ActiveDirectoryAccessRule)">ResetAccessRule</a></span>&#8203;(<a href="ActiveDirectoryAccessRule.html" title="class in system.directoryservices">ActiveDirectoryAccessRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i21">
+<tr class="rowColor" id="i23">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetAccessRule(system.directoryservices.ActiveDirectoryAccessRule)">SetAccessRule</a></span>&#8203;(<a href="ActiveDirectoryAccessRule.html" title="class in system.directoryservices">ActiveDirectoryAccessRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i22">
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetAuditRule(system.directoryservices.ActiveDirectoryAuditRule)">SetAuditRule</a></span>&#8203;(<a href="ActiveDirectoryAuditRule.html" title="class in system.directoryservices">ActiveDirectoryAuditRule</a>&nbsp;rule)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i23">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -593,6 +607,76 @@ boolean&nbsp;isInherited,
 <dd><a href="ActiveDirectorySecurity.html" title="class in system.directoryservices"><code>ActiveDirectorySecurity</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ModifyAccessRule(system.security.accesscontrol.AccessControlModification,system.security.accesscontrol.AccessRule,org.mases.jcobridge.netreflection.JCORefOut)">ModifyAccessRule</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">ModifyAccessRule</span>&#8203;(<span class="arguments"><a href="../security/accesscontrol/AccessControlModification.html" title="class in system.security.accesscontrol">AccessControlModification</a>&nbsp;modification,
+<a href="../security/accesscontrol/AccessRule.html" title="class in system.security.accesscontrol">AccessRule</a>&nbsp;rule,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;modified)</span>
+                         throws <span class="exceptions">java.lang.Throwable,
+<a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+<a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+<a href="../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+<a href="../threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../security/accesscontrol/ObjectSecurity.html#ModifyAccessRule(system.security.accesscontrol.AccessControlModification,system.security.accesscontrol.AccessRule,org.mases.jcobridge.netreflection.JCORefOut)">ModifyAccessRule</a></code>&nbsp;in class&nbsp;<code><a href="../security/accesscontrol/ObjectSecurity.html" title="class in system.security.accesscontrol">ObjectSecurity</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ModifyAuditRule(system.security.accesscontrol.AccessControlModification,system.security.accesscontrol.AuditRule,org.mases.jcobridge.netreflection.JCORefOut)">ModifyAuditRule</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">ModifyAuditRule</span>&#8203;(<span class="arguments"><a href="../security/accesscontrol/AccessControlModification.html" title="class in system.security.accesscontrol">AccessControlModification</a>&nbsp;modification,
+<a href="../security/accesscontrol/AuditRule.html" title="class in system.security.accesscontrol">AuditRule</a>&nbsp;rule,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;modified)</span>
+                        throws <span class="exceptions">java.lang.Throwable,
+<a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+<a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+<a href="../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+<a href="../threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../security/accesscontrol/ObjectSecurity.html#ModifyAuditRule(system.security.accesscontrol.AccessControlModification,system.security.accesscontrol.AuditRule,org.mases.jcobridge.netreflection.JCORefOut)">ModifyAuditRule</a></code>&nbsp;in class&nbsp;<code><a href="../security/accesscontrol/ObjectSecurity.html" title="class in system.security.accesscontrol">ObjectSecurity</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
 </dl>
 </section>
 </li>
@@ -1189,7 +1273,7 @@ boolean&nbsp;isInherited,
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

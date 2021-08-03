@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":1};
+<script type="text/javascript">var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -160,41 +160,139 @@ extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" 
 </thead>
 <tbody>
 <tr class="altColor" id="i0">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ClearHmenuProps(accessibility._RemotableHandle,system.UInt32,system.Guid,int)">ClearHmenuProps</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i1">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ClearHwndProps(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,int)">ClearHwndProps</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i2">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ClearProps(byte,system.UInt32,system.Guid,int)">ClearProps</a></span>&#8203;(byte&nbsp;pIDString,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i3">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i1">
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="altColor" id="i2">
+<tr class="rowColor" id="i5">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="rowColor" id="i3">
+<tr class="altColor" id="i6">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i7">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i8">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetHmenuProp(accessibility._RemotableHandle,system.UInt32,system.Guid,org.mases.jcobridge.netreflection.NetObject)">SetHmenuProp</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;var)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i9">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetHmenuPropServer(accessibility._RemotableHandle,system.UInt32,system.Guid,int,accessibility.IAccPropServer,accessibility.AnnoScope)">SetHmenuPropServer</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps,
+<a href="IAccPropServer.html" title="interface in accessibility">IAccPropServer</a>&nbsp;pServer,
+<a href="AnnoScope.html" title="class in accessibility">AnnoScope</a>&nbsp;AnnoScope)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i10">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetHmenuPropStr(accessibility._RemotableHandle,system.UInt32,system.Guid,java.lang.String)">SetHmenuPropStr</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+java.lang.String&nbsp;str)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i11">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetHwndProp(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,org.mases.jcobridge.netreflection.NetObject)">SetHwndProp</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;var)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i12">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetHwndPropServer(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,int,accessibility.IAccPropServer,accessibility.AnnoScope)">SetHwndPropServer</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps,
+<a href="IAccPropServer.html" title="interface in accessibility">IAccPropServer</a>&nbsp;pServer,
+<a href="AnnoScope.html" title="class in accessibility">AnnoScope</a>&nbsp;AnnoScope)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i13">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetHwndPropStr(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,java.lang.String)">SetHwndPropStr</a></span>&#8203;(<a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+java.lang.String&nbsp;str)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i14">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetPropServer(byte,system.UInt32,system.Guid,int,accessibility.IAccPropServer,accessibility.AnnoScope)">SetPropServer</a></span>&#8203;(byte&nbsp;pIDString,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps,
+<a href="IAccPropServer.html" title="interface in accessibility">IAccPropServer</a>&nbsp;pServer,
+<a href="AnnoScope.html" title="class in accessibility">AnnoScope</a>&nbsp;AnnoScope)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i15">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetPropValue(byte,system.UInt32,system.Guid,org.mases.jcobridge.netreflection.NetObject)">SetPropValue</a></span>&#8203;(byte&nbsp;pIDString,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;var)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>static <a href="IAccPropServices.html" title="interface in accessibility">IAccPropServices</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToIAccPropServices(org.mases.jcobridge.netreflection.IJCOBridgeReflected)">ToIAccPropServices</a></span>&#8203;(<a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code></th>
 <td class="colLast">
@@ -343,6 +441,170 @@ extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" 
 </dl>
 </section>
 </li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ClearHmenuProps(accessibility._RemotableHandle,system.UInt32,system.Guid,int)">ClearHmenuProps</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">ClearHmenuProps</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps)</span>
+              throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ClearHwndProps(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,int)">ClearHwndProps</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">ClearHwndProps</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps)</span>
+             throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="ClearProps(byte,system.UInt32,system.Guid,int)">ClearProps</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">ClearProps</span>&#8203;(<span class="arguments">byte&nbsp;pIDString,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps)</span>
+         throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetHmenuProp(accessibility._RemotableHandle,system.UInt32,system.Guid,org.mases.jcobridge.netreflection.NetObject)">SetHmenuProp</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetHmenuProp</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;var)</span>
+           throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetHmenuPropServer(accessibility._RemotableHandle,system.UInt32,system.Guid,int,accessibility.IAccPropServer,accessibility.AnnoScope)">SetHmenuPropServer</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetHmenuPropServer</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps,
+<a href="IAccPropServer.html" title="interface in accessibility">IAccPropServer</a>&nbsp;pServer,
+<a href="AnnoScope.html" title="class in accessibility">AnnoScope</a>&nbsp;AnnoScope)</span>
+                 throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetHmenuPropStr(accessibility._RemotableHandle,system.UInt32,system.Guid,java.lang.String)">SetHmenuPropStr</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetHmenuPropStr</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hmenu,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+java.lang.String&nbsp;str)</span>
+              throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetHwndProp(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,org.mases.jcobridge.netreflection.NetObject)">SetHwndProp</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetHwndProp</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;var)</span>
+          throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetHwndPropServer(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,int,accessibility.IAccPropServer,accessibility.AnnoScope)">SetHwndPropServer</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetHwndPropServer</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps,
+<a href="IAccPropServer.html" title="interface in accessibility">IAccPropServer</a>&nbsp;pServer,
+<a href="AnnoScope.html" title="class in accessibility">AnnoScope</a>&nbsp;AnnoScope)</span>
+                throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetHwndPropStr(accessibility._RemotableHandle,system.UInt32,system.UInt32,system.Guid,java.lang.String)">SetHwndPropStr</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetHwndPropStr</span>&#8203;(<span class="arguments"><a href="_RemotableHandle.html" title="class in accessibility">_RemotableHandle</a>&nbsp;hwnd,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idObject,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;idChild,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+java.lang.String&nbsp;str)</span>
+             throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetPropServer(byte,system.UInt32,system.Guid,int,accessibility.IAccPropServer,accessibility.AnnoScope)">SetPropServer</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetPropServer</span>&#8203;(<span class="arguments">byte&nbsp;pIDString,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;paProps,
+int&nbsp;cProps,
+<a href="IAccPropServer.html" title="interface in accessibility">IAccPropServer</a>&nbsp;pServer,
+<a href="AnnoScope.html" title="class in accessibility">AnnoScope</a>&nbsp;AnnoScope)</span>
+            throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="SetPropValue(byte,system.UInt32,system.Guid,org.mases.jcobridge.netreflection.NetObject)">SetPropValue</a></h3>
+<div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">SetPropValue</span>&#8203;(<span class="arguments">byte&nbsp;pIDString,
+<a href="../system/UInt32.html" title="class in system">UInt32</a>&nbsp;dwIDStringLen,
+<a href="../system/Guid.html" title="class in system">Guid</a>&nbsp;idProp,
+<a href="../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;var)</span>
+           throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
 </ul>
 </section>
 </li>
@@ -366,7 +628,7 @@ extends <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" 
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
