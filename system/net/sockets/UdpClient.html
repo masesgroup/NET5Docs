@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -337,8 +337,8 @@ int&nbsp;ifindex)</code></th>
 </tr>
 <tr class="rowColor" id="i17">
 <td class="colFirst"><code>byte[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndReceive(system.IAsyncResult,system.net.IPEndPoint)">EndReceive</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult,
-<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;remoteEP)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndReceive(system.IAsyncResult,org.mases.jcobridge.netreflection.JCORefOut)">EndReceive</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&gt;&nbsp;remoteEP)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i18">
@@ -441,7 +441,7 @@ int&nbsp;timeToLive)</code></th>
 </tr>
 <tr class="rowColor" id="i35">
 <td class="colFirst"><code>byte[]</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Receive(system.net.IPEndPoint)">Receive</a></span>&#8203;(<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;remoteEP)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Receive(org.mases.jcobridge.netreflection.JCORefOut)">Receive</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&gt;&nbsp;remoteEP)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i36">
@@ -948,9 +948,9 @@ int&nbsp;port)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="EndReceive(system.IAsyncResult,system.net.IPEndPoint)">EndReceive</a></h3>
+<h3><a id="EndReceive(system.IAsyncResult,org.mases.jcobridge.netreflection.JCORefOut)">EndReceive</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">byte[]</span>&nbsp;<span class="memberName">EndReceive</span>&#8203;(<span class="arguments"><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;asyncResult,
-<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;remoteEP)</span>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&gt;&nbsp;remoteEP)</span>
                   throws <span class="exceptions">java.lang.Throwable,
 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
 <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -982,8 +982,8 @@ int&nbsp;port)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="Receive(system.net.IPEndPoint)">Receive</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">byte[]</span>&nbsp;<span class="memberName">Receive</span>&#8203;(<span class="arguments"><a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&nbsp;remoteEP)</span>
+<h3><a id="Receive(org.mases.jcobridge.netreflection.JCORefOut)">Receive</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">byte[]</span>&nbsp;<span class="memberName">Receive</span>&#8203;(<span class="arguments"><a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../IPEndPoint.html" title="class in system.net">IPEndPoint</a>&gt;&nbsp;remoteEP)</span>
                throws <span class="exceptions">java.lang.Throwable,
 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
 <a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -2395,7 +2395,7 @@ int&nbsp;timeToLive)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

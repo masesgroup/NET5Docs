@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -207,9 +207,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code><a href="MethodBase.html" title="class in system.reflection">MethodBase</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BindToMethod(system.reflection.BindingFlags,system.reflection.MethodBase%5B%5D,org.mases.jcobridge.netreflection.NetObject%5B%5D,system.reflection.ParameterModifier%5B%5D,system.globalization.CultureInfo,java.lang.String%5B%5D,org.mases.jcobridge.netreflection.JCORefOut)">BindToMethod</a></span>&#8203;(<a href="BindingFlags.html" title="class in system.reflection">BindingFlags</a>&nbsp;bindingAttr,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#BindToMethod(system.reflection.BindingFlags,system.reflection.MethodBase%5B%5D,org.mases.jcobridge.netreflection.JCORefOut,system.reflection.ParameterModifier%5B%5D,system.globalization.CultureInfo,java.lang.String%5B%5D,org.mases.jcobridge.netreflection.JCORefOut)">BindToMethod</a></span>&#8203;(<a href="BindingFlags.html" title="class in system.reflection">BindingFlags</a>&nbsp;bindingAttr,
 <a href="MethodBase.html" title="class in system.reflection">MethodBase</a>[]&nbsp;match,
-<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&gt;&nbsp;args,
 <a href="ParameterModifier.html" title="class in system.reflection">ParameterModifier</a>[]&nbsp;modifiers,
 <a href="../globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture,
 java.lang.String[]&nbsp;names,
@@ -267,7 +267,7 @@ java.lang.String[]&nbsp;names,
 </tr>
 <tr class="rowColor" id="i9">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ReorderArgumentArray(org.mases.jcobridge.netreflection.NetObject%5B%5D,org.mases.jcobridge.netreflection.NetObject)">ReorderArgumentArray</a></span>&#8203;(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ReorderArgumentArray(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.NetObject)">ReorderArgumentArray</a></span>&#8203;(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&gt;&nbsp;args,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -538,10 +538,10 @@ java.lang.String[]&nbsp;names,
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="BindToMethod(system.reflection.BindingFlags,system.reflection.MethodBase[],org.mases.jcobridge.netreflection.NetObject[],system.reflection.ParameterModifier[],system.globalization.CultureInfo,java.lang.String[],org.mases.jcobridge.netreflection.JCORefOut)">BindToMethod</a></h3>
+<h3><a id="BindToMethod(system.reflection.BindingFlags,system.reflection.MethodBase[],org.mases.jcobridge.netreflection.JCORefOut,system.reflection.ParameterModifier[],system.globalization.CultureInfo,java.lang.String[],org.mases.jcobridge.netreflection.JCORefOut)">BindToMethod</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="MethodBase.html" title="class in system.reflection">MethodBase</a></span>&nbsp;<span class="memberName">BindToMethod</span>&#8203;(<span class="arguments"><a href="BindingFlags.html" title="class in system.reflection">BindingFlags</a>&nbsp;bindingAttr,
 <a href="MethodBase.html" title="class in system.reflection">MethodBase</a>[]&nbsp;match,
-<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&gt;&nbsp;args,
 <a href="ParameterModifier.html" title="class in system.reflection">ParameterModifier</a>[]&nbsp;modifiers,
 <a href="../globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture,
 java.lang.String[]&nbsp;names,
@@ -584,8 +584,8 @@ java.lang.String[]&nbsp;names,
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="ReorderArgumentArray(org.mases.jcobridge.netreflection.NetObject[],org.mases.jcobridge.netreflection.NetObject)">ReorderArgumentArray</a></h3>
-<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">ReorderArgumentArray</span>&#8203;(<span class="arguments"><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;args,
+<h3><a id="ReorderArgumentArray(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.NetObject)">ReorderArgumentArray</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">ReorderArgumentArray</span>&#8203;(<span class="arguments"><a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&gt;&nbsp;args,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</span>
                           throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
@@ -617,7 +617,7 @@ java.lang.String[]&nbsp;names,
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

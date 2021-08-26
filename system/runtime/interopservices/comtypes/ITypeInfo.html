@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -161,15 +161,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <tbody>
 <tr class="altColor" id="i0">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateInstance(org.mases.jcobridge.netreflection.NetObject,system.Guid,org.mases.jcobridge.netreflection.JCORefOut)">CreateInstance</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;pUnkOuter,
-<a href="../../../Guid.html" title="class in system">Guid</a>&nbsp;riid,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateInstance(org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">CreateInstance</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;pUnkOuter,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../Guid.html" title="class in system">Guid</a>&gt;&nbsp;riid,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;ppvObj)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i1">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetContainingTypeLib(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">GetContainingTypeLib</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="ITypeLib.html" title="interface in system.runtime.interopservices.comtypes">ITypeLib</a>&gt;&nbsp;ppTLB,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pIndex)</code></th>
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pIndex)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i2">
@@ -177,7 +177,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetDocumentation(int,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">GetDocumentation</a></span>&#8203;(int&nbsp;index,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;strName,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;strDocString,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dwHelpContext,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;dwHelpContext,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;strHelpFile)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -240,7 +240,7 @@ int&nbsp;cNames,
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetNames(int,org.mases.jcobridge.netreflection.JCORefOut,int,org.mases.jcobridge.netreflection.JCORefOut)">GetNames</a></span>&#8203;(int&nbsp;memid,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;rgBstrNames,
 int&nbsp;cMaxNames,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pcNames)</code></th>
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pcNames)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i12">
@@ -252,7 +252,7 @@ int&nbsp;cMaxNames,
 <tr class="rowColor" id="i13">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRefTypeOfImplType(int,org.mases.jcobridge.netreflection.JCORefOut)">GetRefTypeOfImplType</a></span>&#8203;(int&nbsp;index,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;href)</code></th>
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;href)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i14">
@@ -411,9 +411,9 @@ int&nbsp;cMaxNames,
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="CreateInstance(org.mases.jcobridge.netreflection.NetObject,system.Guid,org.mases.jcobridge.netreflection.JCORefOut)">CreateInstance</a></h3>
+<h3><a id="CreateInstance(org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">CreateInstance</a></h3>
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">CreateInstance</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;pUnkOuter,
-<a href="../../../Guid.html" title="class in system">Guid</a>&nbsp;riid,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../Guid.html" title="class in system">Guid</a>&gt;&nbsp;riid,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;ppvObj)</span>
              throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
@@ -426,7 +426,7 @@ int&nbsp;cMaxNames,
 <section class="detail">
 <h3><a id="GetContainingTypeLib(org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">GetContainingTypeLib</a></h3>
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetContainingTypeLib</span>&#8203;(<span class="arguments"><a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="ITypeLib.html" title="interface in system.runtime.interopservices.comtypes">ITypeLib</a>&gt;&nbsp;ppTLB,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pIndex)</span>
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pIndex)</span>
                    throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -440,7 +440,7 @@ int&nbsp;cMaxNames,
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetDocumentation</span>&#8203;(<span class="arguments">int&nbsp;index,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;strName,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;strDocString,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dwHelpContext,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;dwHelpContext,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;strHelpFile)</span>
                throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
@@ -492,7 +492,7 @@ int&nbsp;cNames,
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetNames</span>&#8203;(<span class="arguments">int&nbsp;memid,
 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;rgBstrNames,
 int&nbsp;cMaxNames,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;pcNames)</span>
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;pcNames)</span>
        throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -516,7 +516,7 @@ int&nbsp;cMaxNames,
 <section class="detail">
 <h3><a id="GetRefTypeOfImplType(int,org.mases.jcobridge.netreflection.JCORefOut)">GetRefTypeOfImplType</a></h3>
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">GetRefTypeOfImplType</span>&#8203;(<span class="arguments">int&nbsp;index,
-<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;href)</span>
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;href)</span>
                    throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -558,7 +558,7 @@ int&nbsp;cMaxNames,
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
