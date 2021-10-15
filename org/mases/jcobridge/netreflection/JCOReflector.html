@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9};
+<script type="text/javascript">var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.7.1.0-443897bb1f7bb3b4ee2aeda856ffc98bb85138dd powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.7.2.0-bfb65fef5c04468cff78968527df4528afbd5be9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -208,61 +208,68 @@ extends java.lang.Object</pre>
 </tr>
 <tr class="rowColor" id="i11">
 <td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#registerPath(java.lang.String)">registerPath</a></span>&#8203;(java.lang.String&nbsp;path)</code></th>
+<td class="colLast">
+<div class="block">Register search path within the engine</div>
+</td>
+</tr>
+<tr class="altColor" id="i12">
+<td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setCommandLineArgs(java.lang.String%5B%5D)">setCommandLineArgs</a></span>&#8203;(java.lang.String[]&nbsp;args)</code></th>
 <td class="colLast">
 <div class="block">Set command-line arguments</div>
 </td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setConsoleLog(boolean)">setConsoleLog</a></span>&#8203;(boolean&nbsp;isConsoleLog)</code></th>
 <td class="colLast">
 <div class="block">Set console log</div>
 </td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setDebug(boolean)">setDebug</a></span>&#8203;(boolean&nbsp;isDebug)</code></th>
 <td class="colLast">
 <div class="block">Set Debug state</div>
 </td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setInstanceByAssembly(boolean)">setInstanceByAssembly</a></span>&#8203;(boolean&nbsp;isMultiInstance)</code></th>
 <td class="colLast">
 <div class="block">Set <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCOBridge.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCOBridge</code></a> instance by assembly state</div>
 </td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLogFilename(java.lang.String)">setLogFilename</a></span>&#8203;(java.lang.String&nbsp;loggingFilename)</code></th>
 <td class="colLast">
 <div class="block">Set Logging filename</div>
 </td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setLogging(boolean)">setLogging</a></span>&#8203;(boolean&nbsp;isLogging)</code></th>
 <td class="colLast">
 <div class="block">Set Logging state</div>
 </td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setUseFullAssemblyName(boolean)">setUseFullAssemblyName</a></span>&#8203;(boolean&nbsp;useFullname)</code></th>
 <td class="colLast">
 <div class="block">Set UseFullAssemblyName state</div>
 </td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLog(java.lang.String)">writeLog</a></span>&#8203;(java.lang.String&nbsp;msg)</code></th>
 <td class="colLast">
 <div class="block">Write a string to JCOReflector log</div>
 </td>
 </tr>
-<tr class="rowColor" id="i19">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLog(java.lang.String,java.lang.Object...)">writeLog</a></span>&#8203;(java.lang.String&nbsp;format,
 java.lang.Object...&nbsp;args)</code></th>
@@ -270,7 +277,7 @@ java.lang.Object...&nbsp;args)</code></th>
 <div class="block">Write a log to JCOReflector log</div>
 </td>
 </tr>
-<tr class="altColor" id="i20">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#writeLog(java.lang.Throwable)">writeLog</a></span>&#8203;(java.lang.Throwable&nbsp;t)</code></th>
 <td class="colLast">
@@ -493,6 +500,19 @@ java.lang.Object...&nbsp;args)</code></th>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="registerPath(java.lang.String)">registerPath</a></h3>
+<div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">registerPath</span>&#8203;(<span class="arguments">java.lang.String&nbsp;path)</span></div>
+<div class="block">Register search path within the engine
+ <p>
+ It can be applied only before any operation</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>path</code> - the path to register</dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="writeLog(java.lang.Throwable)">writeLog</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">writeLog</span>&#8203;(<span class="arguments">java.lang.Throwable&nbsp;t)</span></div>
 <div class="block">Write exception to JCOReflector log</div>
@@ -586,7 +606,7 @@ java.lang.Object...&nbsp;args)</span></div>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.7.1.0-443897bb1f7bb3b4ee2aeda856ffc98bb85138dd powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.7.2.0-bfb65fef5c04468cff78968527df4528afbd5be9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
